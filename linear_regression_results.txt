@@ -1,12 +1,22 @@
 =============================================
-        Linear Regression Results
+   Linear Regression — Time-Ordered Split
 =============================================
   R-squared : -14.8871  (goal: >= 0.70)
   MAE       : 25.6565
 =============================================
 
 Train y mean: 82.51
-Test y mean: 64.70
+Test y mean:  64.70
+
+ADF Statistic (raw):         -1.6370, p=0.4638
+ADF Statistic (differenced): -9.0981, p=0.0000
+
+=============================================
+   Linear Regression — Shuffled Split (diagnostic)
+=============================================
+  R-squared : 0.3722
+  MAE       : 7.9588
+=============================================
 
 Coefficient Summary (α = 0.05):
                                                   Coef.  Std.Err.           t          P>|t|

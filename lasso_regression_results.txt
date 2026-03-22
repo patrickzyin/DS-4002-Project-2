@@ -1,9 +1,20 @@
 =============================================
-          Lasso Regression Results
+     Lasso Regression — Time-Ordered Split
 =============================================
   Best lambda (α) : 0.0143
   R-squared       : -15.0067  (goal: >= 0.70)
   MAE             : 25.8208
+=============================================
+
+ADF Statistic (raw):         -1.6370, p=0.4638
+ADF Statistic (differenced): -9.0981, p=0.0000
+
+=============================================
+     Lasso Regression — Shuffled Split (diagnostic)
+=============================================
+  Best lambda (α) : 0.2310
+  R-squared       : 0.3630
+  MAE             : 8.3007
 =============================================
 
 Lasso Coefficients (0 = feature eliminated):

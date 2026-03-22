@@ -1,0 +1,39 @@
+=============================================
+            ARIMA Results
+=============================================
+  R-squared : -2.3801
+  MAE       : 11.3821
+=============================================
+
+Train mean: 82.51
+Test mean: 64.70
+
+ADF Statistic (raw): -1.9651
+p-value (raw): 0.3021
+ADF Statistic (differenced): -8.0128
+p-value (differenced): 0.0000
+
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:                UMCSENT   No. Observations:                  189
+Model:                 ARIMA(1, 1, 1)   Log Likelihood                -535.759
+Date:                Thu, 19 Mar 2026   AIC                           1077.517
+Time:                        18:41:54   BIC                           1087.226
+Sample:                             0   HQIC                          1081.451
+                                - 189                                         
+Covariance Type:                  opg                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+ar.L1          0.7041      0.153      4.613      0.000       0.405       1.003
+ma.L1         -0.8231      0.123     -6.693      0.000      -1.064      -0.582
+sigma2        17.4827      1.384     12.634      0.000      14.771      20.195
+===================================================================================
+Ljung-Box (L1) (Q):                   0.65   Jarque-Bera (JB):                42.08
+Prob(Q):                              0.42   Prob(JB):                         0.00
+Heteroskedasticity (H):               0.98   Skew:                            -0.83
+Prob(H) (two-sided):                  0.95   Kurtosis:                         4.61
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).
