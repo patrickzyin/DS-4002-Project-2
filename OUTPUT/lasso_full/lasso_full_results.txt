@@ -1,0 +1,30 @@
+Lasso Regression — Full Dataset (1980–2026)
+=============================================
+   Time-Ordered Split
+=============================================
+  Best lambda (α) : 4.7065
+  R-squared       : -0.1739
+  MAE             : 15.2068
+
+ADF (raw): -2.3832, p=0.1465
+ADF (differenced): -10.8730, p=0.0000
+
+=============================================
+   Shuffled Split (diagnostic)
+=============================================
+  Best lambda (α) : 0.0080
+  R-squared       : 0.2770
+  MAE             : 9.3525
+
+Lasso Coefficients:
+                                     Feature  Coefficient
+                                        Food    -0.797087
+                                     Shelter    -0.000000
+                                     Apparel    -0.000000
+                        Gasoline (all types)    -0.000000
+                                 Electricity    -0.000000
+                                 Natural Gas     0.000000
+Commodities Less Food and Energy Commodities    -0.000000
+                                New Vehicles    -0.000000
+                    Medical Care Commodities    -0.000000
+                       Medical Care services    -0.000000

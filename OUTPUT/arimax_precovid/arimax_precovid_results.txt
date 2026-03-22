@@ -1,0 +1,45 @@
+ARIMAX — Pre-COVID (1980–March 2020, Cold Forecast)
+=============================================
+  R-squared : 0.3393
+  MAE       : 5.6443
+=============================================
+
+Exogenous features: ['Food', 'Medical Care services', 'Gasoline (all types)', 'Electricity', 'Commodities Less Food and Energy Commodities', 'Natural Gas', 'Medical Care Commodities', 'Shelter']
+Train mean: 86.31, Test mean: 89.99
+
+ADF (raw): -3.1368, p=0.0240
+ADF (differenced): -10.9509, p=0.0000
+
+                               SARIMAX Results                                
+==============================================================================
+Dep. Variable:                UMCSENT   No. Observations:                  386
+Model:                 ARIMA(1, 0, 1)   Log Likelihood               -1071.740
+Date:                Sun, 22 Mar 2026   AIC                           2167.481
+Time:                        16:42:54   BIC                           2214.951
+Sample:                             0   HQIC                          2186.306
+                                - 386                                         
+Covariance Type:                  opg                                         
+================================================================================================================
+                                                   coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------------
+const                                           85.8361      3.563     24.091      0.000      78.853      92.819
+Food                                            -1.3680      1.191     -1.149      0.251      -3.702       0.966
+Medical Care services                           -2.8847      1.169     -2.467      0.014      -5.176      -0.593
+Gasoline (all types)                            -0.2732      0.606     -0.451      0.652      -1.461       0.915
+Electricity                                     -0.4840      0.345     -1.402      0.161      -1.160       0.192
+Commodities Less Food and Energy Commodities     2.0858      1.301      1.604      0.109      -0.463       4.635
+Natural Gas                                      0.3612      0.568      0.635      0.525      -0.753       1.475
+Medical Care Commodities                         0.0046      1.026      0.004      0.996      -2.006       2.015
+Shelter                                         -1.4989      1.275     -1.176      0.240      -3.997       0.999
+ar.L1                                            0.9446      0.019     49.071      0.000       0.907       0.982
+ma.L1                                           -0.0054      0.052     -0.102      0.919      -0.108       0.097
+sigma2                                          15.0287      0.894     16.805      0.000      13.276      16.781
+===================================================================================
+Ljung-Box (L1) (Q):                   0.00   Jarque-Bera (JB):                28.93
+Prob(Q):                              0.98   Prob(JB):                         0.00
+Heteroskedasticity (H):               1.53   Skew:                            -0.17
+Prob(H) (two-sided):                  0.02   Kurtosis:                         4.30
+===================================================================================
+
+Warnings:
+[1] Covariance matrix calculated using the outer product of gradients (complex-step).

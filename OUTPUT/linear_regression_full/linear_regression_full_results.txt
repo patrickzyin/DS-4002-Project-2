@@ -1,0 +1,30 @@
+Linear Regression — Full Dataset (1980–2026)
+=============================================
+   Time-Ordered Split
+=============================================
+  R-squared : -0.9252
+  MAE       : 15.8986
+  Train y mean: 86.13, Test y mean: 78.42
+
+ADF (raw): -2.3832, p=0.1465
+ADF (differenced): -10.8730, p=0.0000
+
+=============================================
+   Shuffled Split (diagnostic)
+=============================================
+  R-squared : 0.2756
+  MAE       : 9.3629
+
+Coefficient Summary (α = 0.05):
+                                                  Coef.  Std.Err.           t         P>|t|
+const                                         87.307850  0.459774  189.892982  0.000000e+00
+Food                                          -8.368700  0.784727  -10.664472  1.008084e-23
+Shelter                                        5.897076  0.818554    7.204263  2.625274e-12
+Apparel                                       -1.567242  0.754854   -2.076219  3.846583e-02
+Gasoline (all types)                          -3.014774  0.521281   -5.783397  1.408067e-08
+Electricity                                   -3.898601  0.556104   -7.010557  9.215569e-12
+Natural Gas                                    4.770197  0.508049    9.389240  3.527960e-19
+Commodities Less Food and Energy Commodities   5.510672  1.400859    3.933782  9.743645e-05
+New Vehicles                                  -1.656196  0.973745   -1.700852  8.969203e-02
+Medical Care Commodities                       1.231012  0.742708    1.657465  9.815314e-02
+Medical Care services                         -7.648610  0.796958   -9.597261  6.769268e-20

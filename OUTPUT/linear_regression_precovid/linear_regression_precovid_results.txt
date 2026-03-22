@@ -1,0 +1,30 @@
+Linear Regression — Pre-COVID (1980–March 2020)
+=============================================
+   Time-Ordered Split
+=============================================
+  R-squared : 0.1717
+  MAE       : 6.1317
+  Train y mean: 86.31, Test y mean: 89.99
+
+ADF (raw): -2.9968, p=0.0352
+ADF (differenced): -12.6742, p=0.0000
+
+=============================================
+   Shuffled Split (diagnostic)
+=============================================
+  R-squared : 0.3762
+  MAE       : 6.8660
+
+Coefficient Summary (α = 0.05):
+                                                  Coef.  Std.Err.           t         P>|t|
+const                                         88.133003  0.494405  178.260756  0.000000e+00
+Food                                          -7.998468  0.808923   -9.887794  1.221281e-20
+Shelter                                        6.530529  0.913759    7.146881  4.665019e-12
+Apparel                                       -1.159606  0.848459   -1.366719  1.725321e-01
+Gasoline (all types)                          -3.672105  0.584935   -6.277803  9.500197e-10
+Electricity                                   -3.886352  0.590471   -6.581786  1.568918e-10
+Natural Gas                                    5.132756  0.543087    9.451070  3.715161e-19
+Commodities Less Food and Energy Commodities   4.206094  1.522749    2.762171  6.024477e-03
+New Vehicles                                  -0.487716  0.932262   -0.523153  6.011766e-01
+Medical Care Commodities                       1.046100  0.762546    1.371852  1.709295e-01
+Medical Care services                         -7.806183  0.815749   -9.569345  1.486497e-19

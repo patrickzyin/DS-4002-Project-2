@@ -1,0 +1,30 @@
+Lasso Regression — Pre-COVID (1980–March 2020)
+=============================================
+   Time-Ordered Split
+=============================================
+  Best lambda (α) : 0.1837
+  R-squared       : 0.2644
+  MAE             : 5.6770
+
+ADF (raw): -2.9968, p=0.0352
+ADF (differenced): -12.6742, p=0.0000
+
+=============================================
+   Shuffled Split (diagnostic)
+=============================================
+  Best lambda (α) : 0.0063
+  R-squared       : 0.3770
+  MAE             : 6.8581
+
+Lasso Coefficients:
+                                     Feature  Coefficient
+                                        Food    -7.135844
+                       Medical Care services    -6.630602
+                        Gasoline (all types)    -3.316887
+                                 Electricity    -3.239895
+                                New Vehicles     0.000000
+                                     Apparel    -0.000000
+                    Medical Care Commodities     0.266451
+Commodities Less Food and Energy Commodities     2.365113
+                                 Natural Gas     4.582602
+                                     Shelter     5.218338
