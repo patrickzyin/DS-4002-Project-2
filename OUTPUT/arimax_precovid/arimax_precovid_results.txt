@@ -1,8 +1,8 @@
 ARIMAX — Pre-COVID (1980–March 2020, Cold Forecast)
-=============================================
-  R-squared : 0.3393
-  MAE       : 5.6443
-=============================================
+====================
+R-squared : -5.8674
+MAE       : 20.1314
+====================
 
 Exogenous features: ['Food', 'Medical Care services', 'Gasoline (all types)', 'Electricity', 'Commodities Less Food and Energy Commodities', 'Natural Gas', 'Medical Care Commodities', 'Shelter']
 Train mean: 86.31, Test mean: 89.99
@@ -13,32 +13,31 @@ ADF (differenced): -10.9509, p=0.0000
                                SARIMAX Results                                
 ==============================================================================
 Dep. Variable:                UMCSENT   No. Observations:                  386
-Model:                 ARIMA(1, 0, 1)   Log Likelihood               -1071.740
-Date:                Sun, 22 Mar 2026   AIC                           2167.481
-Time:                        16:42:54   BIC                           2214.951
-Sample:                             0   HQIC                          2186.306
+Model:                 ARIMA(1, 1, 1)   Log Likelihood               -1065.965
+Date:                Sun, 22 Mar 2026   AIC                           2153.930
+Time:                        19:33:27   BIC                           2197.416
+Sample:                             0   HQIC                          2171.177
                                 - 386                                         
 Covariance Type:                  opg                                         
 ================================================================================================================
                                                    coef    std err          z      P>|z|      [0.025      0.975]
 ----------------------------------------------------------------------------------------------------------------
-const                                           85.8361      3.563     24.091      0.000      78.853      92.819
-Food                                            -1.3680      1.191     -1.149      0.251      -3.702       0.966
-Medical Care services                           -2.8847      1.169     -2.467      0.014      -5.176      -0.593
-Gasoline (all types)                            -0.2732      0.606     -0.451      0.652      -1.461       0.915
-Electricity                                     -0.4840      0.345     -1.402      0.161      -1.160       0.192
-Commodities Less Food and Energy Commodities     2.0858      1.301      1.604      0.109      -0.463       4.635
-Natural Gas                                      0.3612      0.568      0.635      0.525      -0.753       1.475
-Medical Care Commodities                         0.0046      1.026      0.004      0.996      -2.006       2.015
-Shelter                                         -1.4989      1.275     -1.176      0.240      -3.997       0.999
-ar.L1                                            0.9446      0.019     49.071      0.000       0.907       0.982
-ma.L1                                           -0.0054      0.052     -0.102      0.919      -0.108       0.097
-sigma2                                          15.0287      0.894     16.805      0.000      13.276      16.781
+Food                                            -1.9565      1.118     -1.750      0.080      -4.148       0.235
+Medical Care services                           -3.3087      1.112     -2.975      0.003      -5.489      -1.129
+Gasoline (all types)                            -0.3252      0.594     -0.547      0.584      -1.490       0.839
+Electricity                                     -0.5022      0.337     -1.490      0.136      -1.163       0.158
+Commodities Less Food and Energy Commodities     1.9808      1.357      1.460      0.144      -0.679       4.641
+Natural Gas                                      0.6009      0.530      1.135      0.257      -0.437       1.639
+Medical Care Commodities                         0.0826      0.985      0.084      0.933      -1.847       2.012
+Shelter                                         -1.6755      1.153     -1.454      0.146      -3.934       0.583
+ar.L1                                            0.7805      0.067     11.651      0.000       0.649       0.912
+ma.L1                                           -0.9093      0.045    -20.110      0.000      -0.998      -0.821
+sigma2                                          14.8656      0.900     16.526      0.000      13.103      16.629
 ===================================================================================
-Ljung-Box (L1) (Q):                   0.00   Jarque-Bera (JB):                28.93
-Prob(Q):                              0.98   Prob(JB):                         0.00
-Heteroskedasticity (H):               1.53   Skew:                            -0.17
-Prob(H) (two-sided):                  0.02   Kurtosis:                         4.30
+Ljung-Box (L1) (Q):                   0.99   Jarque-Bera (JB):                22.12
+Prob(Q):                              0.32   Prob(JB):                         0.00
+Heteroskedasticity (H):               1.49   Skew:                            -0.11
+Prob(H) (two-sided):                  0.03   Kurtosis:                         4.15
 ===================================================================================
 
 Warnings:

@@ -1,19 +1,19 @@
 Linear Regression — Full Dataset (1980–2026)
-=============================================
-   Time-Ordered Split
-=============================================
-  R-squared : -0.9252
-  MAE       : 15.8986
-  Train y mean: 86.13, Test y mean: 78.42
+====================
+Time-Ordered Split
+====================
+R-squared : -0.9252
+MAE       : 15.8986
+Train y mean: 86.13, Test y mean: 78.42
 
 ADF (raw): -2.3832, p=0.1465
 ADF (differenced): -10.8730, p=0.0000
 
-=============================================
-   Shuffled Split (diagnostic)
-=============================================
-  R-squared : 0.2756
-  MAE       : 9.3629
+====================
+Shuffled Split (diagnostic)
+====================
+R-squared : 0.2756
+MAE       : 9.3629
 
 Coefficient Summary (α = 0.05):
                                                   Coef.  Std.Err.           t         P>|t|

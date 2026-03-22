@@ -45,7 +45,7 @@ SCRIPTS/
 * linear_regression_precovid.py — Same as above but filtered to data before April 2020 to isolate pre-COVID relationships
 * lasso_full.py — Runs Lasso regression with time-series cross-validation on the full dataset, automatically selects the most important CPI features
 * lasso_precovid.py — Same as above but filtered to pre-COVID data
-* arimax_full.py — Fits an ARIMAX(1,1,1) time series model on the full dataset using Food as the exogenous feature (selected by Lasso), produces a cold forecast with 95% confidence intervals
+* arimax_full.py — Fits an ARIMAX(1,0,1) time series model on the full dataset using Food as the exogenous feature (selected by Lasso), produces a cold forecast with 95% confidence intervals
 * arimax_precovid.py — Same as above on pre-COVID data using the 8 features selected by Lasso: Food, Medical Care services, Gasoline, Electricity, Commodities Less Food and Energy, Natural Gas, Medical Care Commodities, Shelter
 
 OUTPUT/
@@ -99,7 +99,7 @@ Navigate into the SCRIPTS folder and run:
 cd SCRIPTS
 python correlation_matrix.py
 ```
-This generates a heatmap of correlations between all CPI features and prints any pairs with correlation above 0.85. The output image saves to `OUTPUT/correlation_matrix/`. This step identifies which features to drop for multicollinearity before running the models — the following columns are dropped in all subsequent scripts: Overall CPI, Core CPI, Energy, Services Less Energy Services, Food at home, Food away from home.
+This generates a heatmap of correlations between all CPI features and prints any pairs with correlation above 0.85. This step identifies which features to drop for multicollinearity before running the models.
 
 ### Step 4 — Run the linear regression models
 
@@ -116,7 +116,7 @@ Each script prints results to the terminal and saves a results text file and thr
 python lasso_full.py
 python lasso_precovid.py
 ```
-These work identically to the linear regression scripts but use Lasso regularization with time-series cross-validation to automatically select the most important features. Outputs save to `OUTPUT/lasso_full/` and `OUTPUT/lasso_precovid/`. Runtime is under 60 seconds each.
+These work identically to the linear regression scripts but use Lasso regularization with time-series cross-validation to automatically select the most important features. Outputs save to `OUTPUT/lasso_full/` and `OUTPUT/lasso_precovid/`. Runtime is under 30 seconds each.
 
 ### Step 6 — Run the ARIMAX models
 
@@ -124,4 +124,4 @@ These work identically to the linear regression scripts but use Lasso regulariza
 python arimax_full.py
 python arimax_precovid.py
 ```
-These scripts fit an ARIMAX(1,0,1) model — a time series model that combines sentiment's own historical momentum with CPI components as external inputs. The model is trained on the first 80% of the data and makes a cold forecast on the remaining 20% with no updates, producing a forecast with 95% confidence intervals. The pre-COVID version uses the 8 features selected by Lasso (Food, Medical Care services, Gasoline, Electricity, Commodities Less Food and Energy, Natural Gas, Medical Care Commodities, Shelter). The full dataset version uses only Food, which was the sole feature retained by Lasso on the full dataset. Outputs save to `OUTPUT/arimax_full/` and `OUTPUT/arimax_precovid/`. Runtime is under 2 minutes each.
+These scripts fit an ARIMAX(1,0,1) model — a time series model that combines sentiment's own historical momentum with CPI components as external inputs. The model is trained on the first 80% of the data and makes a cold forecast on the remaining 20% with no updates, producing a forecast with 95% confidence intervals. The pre-COVID version uses the 8 features selected by Lasso (Food, Medical Care services, Gasoline, Electricity, Commodities Less Food and Energy, Natural Gas, Medical Care Commodities, Shelter). The full dataset version uses only Food, which was the sole feature retained by Lasso on the full dataset. Outputs save to `OUTPUT/arimax_full/` and `OUTPUT/arimax_precovid/`. Runtime is under 1 minutes each.

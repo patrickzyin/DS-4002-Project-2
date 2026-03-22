@@ -1,20 +1,20 @@
 Lasso Regression — Full Dataset (1980–2026)
-=============================================
-   Time-Ordered Split
-=============================================
-  Best lambda (α) : 4.7065
-  R-squared       : -0.1739
-  MAE             : 15.2068
+====================
+Time-Ordered Split
+====================
+Best lambda (α) : 4.7065
+R-squared       : -0.1739
+MAE             : 15.2068
 
 ADF (raw): -2.3832, p=0.1465
 ADF (differenced): -10.8730, p=0.0000
 
-=============================================
-   Shuffled Split (diagnostic)
-=============================================
-  Best lambda (α) : 0.0080
-  R-squared       : 0.2770
-  MAE             : 9.3525
+====================
+Shuffled Split (diagnostic)
+====================
+Best lambda (α) : 0.0080
+R-squared       : 0.2770
+MAE             : 9.3525
 
 Lasso Coefficients:
                                      Feature  Coefficient

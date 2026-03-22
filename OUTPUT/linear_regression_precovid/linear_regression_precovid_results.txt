@@ -1,19 +1,19 @@
 Linear Regression — Pre-COVID (1980–March 2020)
-=============================================
-   Time-Ordered Split
-=============================================
-  R-squared : 0.1717
-  MAE       : 6.1317
-  Train y mean: 86.31, Test y mean: 89.99
+====================
+Time-Ordered Split
+====================
+R-squared : 0.1717
+MAE       : 6.1317
+Train y mean: 86.31, Test y mean: 89.99
 
 ADF (raw): -2.9968, p=0.0352
 ADF (differenced): -12.6742, p=0.0000
 
-=============================================
-   Shuffled Split (diagnostic)
-=============================================
-  R-squared : 0.3762
-  MAE       : 6.8660
+====================
+Shuffled Split (diagnostic)
+====================
+R-squared : 0.3762
+MAE       : 6.8660
 
 Coefficient Summary (α = 0.05):
                                                   Coef.  Std.Err.           t         P>|t|
