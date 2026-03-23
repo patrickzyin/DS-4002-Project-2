@@ -62,7 +62,7 @@ print(f"ADF (differenced): {adf_diff[0]:.4f}, p={adf_diff[1]:.4f}")
 
 #Fit ARIMAX and generate cold forecast
 print("\nFitting ARIMAX model...")
-model = ARIMA(train_y, exog=train_x, order=(1, 1, 1))
+model = ARIMA(train_y, exog=train_x, order=(1, 0, 1))
 model_fit = model.fit()
 
 forecast_result = model_fit.get_forecast(steps=len(test_y), exog=test_x.values)
